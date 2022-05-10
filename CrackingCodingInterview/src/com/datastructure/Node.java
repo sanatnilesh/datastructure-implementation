@@ -44,4 +44,11 @@ public class Node {
 		}
 	}
 
+	public void displayKtoLastElement(int d) {
+		Node temp = head;
+		while (temp != null) {
+			
+		}
+	}
+
 }

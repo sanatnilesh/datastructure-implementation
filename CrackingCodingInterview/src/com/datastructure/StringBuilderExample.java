@@ -1,7 +1,5 @@
 package com.datastructure;
 
-import java.util.Iterator;
-
 /**
  * Why StringBuilder is required? If we have string of array and if we wanted to
  * created a sentence from that array we need to perform string concatenation

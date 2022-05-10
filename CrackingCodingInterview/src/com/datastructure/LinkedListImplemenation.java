@@ -29,6 +29,7 @@ public class LinkedListImplemenation {
 		node.appendAtStart(0);
 		node.appendAtStart(2);
 		node.print();
+		    
 	}
 
 	private static void removeDuplicate(LinkedList<Integer> linkedList) {
