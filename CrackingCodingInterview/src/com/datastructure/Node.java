@@ -4,25 +4,26 @@ public class Node {
 	Node next;
 	int data;
 
+	public Node head = null;
+
 	public Node(int data) {
 		this.data = data;
 		this.next = null;
+		head = this;
 	}
-
-	public Node head = null;
 
 	public void appendToEnd(int d) {
 		Node newNode = new Node(d);
 		Node temp = head;
 		if (head == null) {
 			head = newNode;
-		}else {
-			while(temp.next != null) {
+		} else {
+			while (temp.next != null) {
 				temp = temp.next;
 			}
 			temp.next = newNode;
 		}
-		
+
 	}
 
 	public void appendAtStart(int d) {
@@ -44,10 +45,22 @@ public class Node {
 		}
 	}
 
+	public int deleteFromFront() {
+		int data = 0;
+		if (head == null) {
+			System.out.println("Given queue is Empty");
+			return -1;
+		} else {
+			data = head.data;
+			head = head.next;
+		}
+		return data;
+	}
+
 	public void displayKtoLastElement(int d) {
 		Node temp = head;
 		while (temp != null) {
-			
+
 		}
 	}
 
